@@ -7,8 +7,11 @@ import i18n from '@/plugins/i18n'
 // import App from './App.vue'
 import DemoI18n from "@/DemoI18n.vue";
 import router from './router'
+import ServiceProviderPlugin from './plugins/service-provider';
 
 const app = createApp(DemoI18n)
+
+app.use(ServiceProviderPlugin)
 
 app.use(createPinia())
 app.use(router)
