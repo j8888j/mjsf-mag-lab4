@@ -28,8 +28,20 @@ export default {
     <Navigation />
   </header>
   <RouterView />
+
   <OptionsComponent />
   <CompositionComponent />
+
+  <button v-tooltip="{ 
+    content: 'Tooltip', 
+    html: false,
+    delay: 200, 
+    trigger: 'hover click', 
+    show: true 
+  }">
+    Click to hover
+  </button>
+
 </template>
 
 <style scoped>
